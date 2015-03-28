@@ -49,7 +49,26 @@ così da applicare le modifiche.
 
 ### Lavorare al progetto - Installazione in locale
 
-Work in progress..
+Per poter far funzionare il sito in locale, è necessario compiere alcuni passaggi dopo aver clonato il repository.
+
+```sh
+// Posizionarsi nella cartella del progetto
+$ cd /cartella/del/progetto
+
+// Scaricare i pacchetti di node richiesti
+$ npm install
+
+// Scaricare le librerie JavaScript necessarie
+$ bower install
+
+// Per vedere il sito con la live refresh (che aggiorna automaticamente quando salvate un file)
+$ grunt serve
+
+// Per eseguire i test
+$ grunt karma:unit
+```
+
+A breve farò una miniguida sui generatori di yeoman e i tasks di grunt.
 
 [Fucis]:http://alessandrofusco.co
 [NodeJS]:https://nodejs.org/
