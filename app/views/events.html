@@ -1,0 +1,8 @@
+<div class="container">
+    <p>Events view.</p>
+    <input type="text" ng-model="search" />
+    <br />
+    <ul ng-controller="EventsCtrl">
+        <li ng-repeat="event in events | filter:search">{{ event.name }}</li>
+    </ul>
+</div>
