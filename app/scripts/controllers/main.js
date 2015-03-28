@@ -7,9 +7,9 @@
  * # MainCtrl
  * Controller of the lateNightApp
  */
-angular.module('lateNightApp')
-	.controller('MainCtrl', ['$scope', '$mdSidenav', function ($scope, $mdSidenav) {
-		$scope.toggleSidenav = function(menuId) {
-			$mdSidenav(menuId).toggle();
-		};
-	}]);
+var app = angular.module('lateNightApp');
+app.controller('MainCtrl', ['$scope', '$mdSidenav', function ($scope, $mdSidenav) {
+	$scope.toggleSidenav = function(menuId) {
+		$mdSidenav(menuId).toggle();
+	};
+}]);
