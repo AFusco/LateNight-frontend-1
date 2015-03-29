@@ -1,8 +1,42 @@
-<div class="container">
-    <p>Events view.</p>
-    <input type="text" ng-model="search" />
-    <br />
-    <ul ng-controller="EventsCtrl">
-        <li ng-repeat="event in events | filter:search">{{ event.name }}</li>
-    </ul>
+<div ng-controller="EventsCtrl">
+  <md-content>
+    <md-input-container flex>
+      <label>Cerca Evento</label>
+      <input ng-model="search">
+    </md-input-container>
+
+    <md-card ng-repeat="event in events | filter:search">
+      <img style="-webkit-filter: contrast(80%);" src="{{ event.image }}" alt="Yeoman">
+      <md-button class="md-fab md-fab-middle-right md-primary" aria-label="Login">
+        <md-icon md-svg-src="images/svg/star60.svg"></md-icon>
+      </md-button>
+      <md-card-content>
+        <h2 class="md-title">{{ event.name }}</h2>
+        <md-checkbox style="margin-top:-48px;" align="right" ng-model="checked" aria-label="Checkbox 1">
+          Mostra tutto
+        </md-checkbox>
+
+        <p>{{ event.description }}</p>
+        <md-divider></md-divider>
+        <md-content class="check-element animate-hide" ng-show="checked">
+          <md-list>
+            <md-item>
+              <md-item-content>
+                <md-icon md-svg-src="images/svg/date.svg" class="event-icon-list"></md-icon>
+                <p class="event-tile-content">{{ event.date }}</p>
+              </md-item-content>
+              <md-divider></md-divider>
+            </md-item>
+
+            <md-item>
+              <md-item-content>
+                <md-icon md-svg-src="images/svg/pin56.svg" class="event-icon-list"></md-icon>
+                <p class="event-tile-content">{{ event.location }}</p>
+              </md-item-content>
+            </md-item>
+          </md-list>
+        </md-content>
+      </md-card-content>
+    </md-card>
+  </md-content>
 </div>
