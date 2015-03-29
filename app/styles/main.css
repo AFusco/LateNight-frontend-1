@@ -123,3 +123,29 @@ https://github.com/google/material-design-icons
 .check-element {
   background: inherit;
 }
+
+/* My Material Design CSS*/
+.md-button.md-fab.md-fab-middle-right {
+  margin: -30px 20px;
+  right: 20px;
+  left: auto;
+  position: absolute;
+}
+
+.md-label-input {
+  margin-left: 50px;
+}
+.md-icon-input {
+  margin: 15px 0 0 5px;
+}
+
+/**
+ * My content list item CSS.
+ */
+.event-tile-content {
+  margin: 15px 0 15px 10px;
+  font-size: 1.0em;
+}
+.event-icon-list {
+  margin: 0 0 0 5px;
+}

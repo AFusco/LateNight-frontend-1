@@ -1,19 +1,27 @@
+<!-- Palette Registrazione -->
 <md-whiteframe class="md-whiteframe-z1" layout>
   <div layout-fill>
-    <md-toolbar class="md-warn">
+    <md-toolbar class="md-warn md-tall">
       <div class="md-toolbar-tools">
         <h2 class="md-flex">Login</h2>
       </div>
     </md-toolbar>
+
+    <md-button class="md-fab md-fab-middle-right md-primary" aria-label="Login">
+      <md-icon md-svg-src="images/svg/expand38.svg"></md-icon>
+    </md-button>
+
     <md-content class="md-padding">
       <form name="loginForm">
         <md-input-container flex>
-          <label>Username</label>
-          <input type="text">
+          <label class="md-label-input">Username</label>
+          <input class="md-label-input" type="text">
+          <md-icon md-svg-src="images/svg/user77.svg" class="md-icon-input"></md-icon>
         </md-input-container>
         <md-input-container flex>
-          <label>Password</label>
-          <input type="password">
+          <label class="md-label-input">Password</label>
+          <input class="md-label-input" type="password">
+          <md-icon md-svg-src="images/svg/qr2.svg" class="md-icon-input"></md-icon>
         </md-input-container>
       </form>
     </md-content>
@@ -21,47 +29,58 @@
 </md-whiteframe>
 <br />
 
+<!-- Palette Registrazione -->
 <md-whiteframe class="md-whiteframe-z1" layout>
   <div layout-fill>
-    <md-toolbar class="md-warn">
+    <md-toolbar class="md-warn md-tall">
       <div class="md-toolbar-tools">
         <h2 class="md-flex">Registrati</h2>
       </div>
     </md-toolbar>
 
+    <md-button class="md-fab md-fab-middle-right md-primary" aria-label="Login">
+      <md-icon md-svg-src="images/svg/expand38.svg"></md-icon>
+    </md-button>
+
     <md-content class="md-padding">
       <form name="signupForm">
-        <md-input-container md-no-float>
-          <md-icon md-svg-src="images/svg/user77.svg" class="name"></md-icon>
-          <input type="text" placeholder="First Name (required)" ng-required="true">
+        <md-input-container flex>
+          <label class="md-label-input">Nome</label>
+          <input class="md-label-input" type="text">
+          <md-icon md-svg-src="images/svg/user77.svg" class="md-icon-input"></md-icon>
         </md-input-container>
         <div layout layout-sm="column">
-          <md-input-container md-no-float style="margin-left:56px; width:60%;">
-            <input type="text" placeholder="Last Name" ng-required="false">
+          <md-input-container flex>
+            <label>Cognome</label>
+            <input type="text">
           </md-input-container>
           <md-input-container md-no-float flex>
-            <input type="text" placeholder="Birthday" onfocus="(this.type='date')" onblur="(this.type='text')" ng-required="false">
+            <input type="text" placeholder="Data Nascita" onfocus="(this.type='date')" onblur="(this.type='text')" ng-required="false">
           </md-input-container>
         </div>
 
         <md-input-container md-no-float>
-          <md-icon md-svg-src="images/svg/email5.svg" class="mail"></md-icon>
-          <input type="email" placeholder="Email (required)" ng-required="true">
+          <label class="md-label-input">E-Mail</label>
+          <md-icon md-svg-src="images/svg/email5.svg" class="md-icon-input"></md-icon>
+          <input class="md-label-input" type="text">
         </md-input-container>
 
         <md-input-container md-no-float>
-          <md-icon md-svg-src="images/svg/qr2.svg" class="password"></md-icon>
-          <input type="password" placeholder="Password (required)" ng-required="true">
+          <label class="md-label-input">Password</label>
+          <md-icon md-svg-src="images/svg/qr2.svg" class="md-icon-input"></md-icon>
+          <input class="md-label-input" type="password">
         </md-input-container>
 
         <md-input-container md-no-float>
-          <md-icon md-svg-src="images/svg/call5.svg"></md-icon>
-          <input type="text" placeholder="Phone Number" ng-required="false">
+          <label class="md-label-input">Telefono</label>
+          <md-icon md-svg-src="images/svg/call5.svg" class="md-icon-input"></md-icon>
+          <input class="md-label-input" type="text">
         </md-input-container>
 
         <md-input-container md-no-float>
-          <md-icon md-svg-src="images/svg/pin56.svg"></md-icon>
-          <input type="text" placeholder="Address" ng-required="false">
+          <label class="md-label-input">Indirizzo</label>
+          <md-icon md-svg-src="images/svg/pin56.svg" class="md-icon-input"></md-icon>
+          <input class="md-label-input" type="text">
         </md-input-container>
        </form>
     </md-content>
