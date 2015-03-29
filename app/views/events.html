@@ -1,8 +1,22 @@
-<div class="container">
-    <p>Events view.</p>
-    <input type="text" ng-model="search" />
-    <br />
-    <ul ng-controller="EventsCtrl">
-        <li ng-repeat="event in events | filter:search">{{ event.name }}</li>
-    </ul>
+<div ng-controller="EventsCtrl">
+  <md-content>
+    <md-input-container flex>
+      <label>Cerca Evento</label>
+      <input ng-model="search">
+    </md-input-container>
+
+    <md-card ng-repeat="event in events | filter:search">
+      <img src="{{ event.image }}" alt="Yeoman">
+      <md-card-content>
+        <h2 class="md-title">{{ event.name }}</h2>
+        <md-checkbox style="margin-top:-48px;" align="right" ng-model="checked" aria-label="Checkbox 1">
+          Mostra tutto
+        </md-checkbox>
+
+        <md-content class="check-element animate-hide" ng-show="checked">
+          {{ event.description }}
+        </md-content>
+      </md-card-content>
+    </md-card>
+  </md-content>
 </div>
