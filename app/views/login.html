@@ -1,0 +1,69 @@
+<md-whiteframe class="md-whiteframe-z1" layout>
+  <div layout-fill>
+    <md-toolbar class="md-warn">
+      <div class="md-toolbar-tools">
+        <h2 class="md-flex">Login</h2>
+      </div>
+    </md-toolbar>
+    <md-content class="md-padding">
+      <form name="loginForm">
+        <md-input-container flex>
+          <label>Username</label>
+          <input type="text">
+        </md-input-container>
+        <md-input-container flex>
+          <label>Password</label>
+          <input type="password">
+        </md-input-container>
+      </form>
+    </md-content>
+  </div>
+</md-whiteframe>
+<br />
+
+<md-whiteframe class="md-whiteframe-z1" layout>
+  <div layout-fill>
+    <md-toolbar class="md-warn">
+      <div class="md-toolbar-tools">
+        <h2 class="md-flex">Registrati</h2>
+      </div>
+    </md-toolbar>
+
+    <md-content class="md-padding">
+      <form name="signupForm">
+        <md-input-container md-no-float>
+          <md-icon md-svg-src="images/svg/user77.svg" class="name"></md-icon>
+          <input type="text" placeholder="First Name (required)" ng-required="true">
+        </md-input-container>
+        <div layout layout-sm="column">
+          <md-input-container md-no-float style="margin-left:56px; width:60%;">
+            <input type="text" placeholder="Last Name" ng-required="false">
+          </md-input-container>
+          <md-input-container md-no-float flex>
+            <input type="text" placeholder="Birthday" onfocus="(this.type='date')" onblur="(this.type='text')" ng-required="false">
+          </md-input-container>
+        </div>
+
+        <md-input-container md-no-float>
+          <md-icon md-svg-src="images/svg/email5.svg" class="mail"></md-icon>
+          <input type="email" placeholder="Email (required)" ng-required="true">
+        </md-input-container>
+
+        <md-input-container md-no-float>
+          <md-icon md-svg-src="images/svg/qr2.svg" class="password"></md-icon>
+          <input type="password" placeholder="Password (required)" ng-required="true">
+        </md-input-container>
+
+        <md-input-container md-no-float>
+          <md-icon md-svg-src="images/svg/call5.svg"></md-icon>
+          <input type="text" placeholder="Phone Number" ng-required="false">
+        </md-input-container>
+
+        <md-input-container md-no-float>
+          <md-icon md-svg-src="images/svg/pin56.svg"></md-icon>
+          <input type="text" placeholder="Address" ng-required="false">
+        </md-input-container>
+       </form>
+    </md-content>
+  </div>
+</md-whiteframe>
