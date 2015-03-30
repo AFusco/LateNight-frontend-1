@@ -23,23 +23,17 @@
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <!-- Inizio Toolbar -->
-    <md-toolbar layout="row">
-      <button ng-click="toggleSidenav('left')" hide-gt-sm class="menuBtn">
-        <span class="visually-hidden">Menu</span>
-      </button>
-      <h1 class="md-toolbar-tools" layout-align-gt-sm="left">LateNight</h1>
-      <md-button href="#/login" style="margin:12px 20px;" class="md-fab md-mini">
-        <md-icon md-svg-src="images/svg/user77.svg"></md-icon>
-      </md-button>
-    </md-toolbar>
-    <!-- Fine Toolbar -->
 
     <!-- Inizio Sidenav -->
     <div layout="row" flex>
-
       <!-- Left column -->
       <md-sidenav layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')">
+            <!-- Inizio Toolbar -->
+        <md-toolbar layout="row">
+      <h1 class="md-toolbar-tools" layout-align-gt-sm="left">LateNight</h1>
+    </md-toolbar>
+    <!-- Fine Toolbar -->
+
         <md-button style="border-radius:0;" href="#/latenight">LateNight</md-button>
         <md-button style="border-radius:0;" href="#/events">Eventi</md-button>
         <md-button style="border-radius:0;" href="#/tickets">Biglietti</md-button>
@@ -51,6 +45,19 @@
 
       <!-- Right column -->
       <div layout="column" flex id="content">
+          <!-- Inizio Toolbar -->
+        <md-toolbar layout="row">
+          <button ng-click="toggleSidenav('left')" hide-gt-sm class="menuBtn">
+            <span class="visually-hidden">Menu</span>
+          </button>
+          <h1 class="md-toolbar-tools" layout-align-gt-sm="left">TODO: cambiare con il titolo della pagina corrente</h1>
+          <md-button href="#/login" style="margin:12px 20px;" class="md-fab md-mini">
+            <md-icon md-svg-src="images/svg/user77.svg"></md-icon>
+          </md-button>
+        </md-toolbar>
+    <!-- Fine Toolbar -->
+
+
         <md-content layout="column" flex class="md-padding">
           <ng-view></ng-view>
         </md-content>
