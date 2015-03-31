@@ -154,14 +154,43 @@ https://github.com/google/material-design-icons
 .md-whiteframe-material-web {
   box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.26);
   background: #fff;
-  height: 400px;
-  margin: -128px 128px 20px 128px;
-  padding: 20px;
+  height: auto;
+  margin: 96px 128px 20px 128px;
+  position: relative;
+  z-index: 2;
 }
 .md-whiteframe-material-web2 {
   box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.26);
   background: #fff;
-  height: 400px;
+  height: auto;
   margin: 0 128px 20px 128px;
-  padding: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.header {
+  height: 256px;
+  width: 100%;
+  background: #673AB7;
+  top: 0;
+  right: 0;
+  left: 0;
+  position:fixed;
+  z-index:1;
+}
+
+.face {
+  border-radius: 70px;
+  border: 1px solid #ddd;
+  width: 100px;
+  margin: 20px 20px 30px 10px;
+}
+.menu-button {
+  border-radius:0;
+}
+.menu-icon {
+  /*border-radius: 30px;
+  border: 1px solid #ddd;*/
+  width: 32px;
+  margin: 16px;
 }

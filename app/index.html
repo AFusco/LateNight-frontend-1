@@ -24,27 +24,52 @@
     <![endif]-->
 
     <!-- Inizio Toolbar -->
-    <md-toolbar style="overflow-y:scroll;">
+    <div class="header">
       <button ng-click="toggleLeft('left')" class="menuBtn">
         <span class="visually-hidden">Menu</span>
       </button>
-    </md-toolbar>
+    </div>
     <!-- Fine Toolbar -->
 
     <!-- Inizio Sidenav Left -->
     <section layout="row" flex>
       <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left">
         <md-content class="md-padding" ng-controller="LeftCtrl">
-          <md-button style="border-radius:0;" href="#/latenight">LateNight</md-button>
-          <md-button style="border-radius:0;" href="#/events">Eventi</md-button>
-          <md-button style="border-radius:0;" href="#/tickets">Biglietti</md-button>
-          <md-button style="border-radius:0;" href="#/activity">Attività</md-button>
+          <md-button href="#/login">
+          <div layout layout-align="center center">
+            <div class="md-tile-left">
+              <img ng-src="images/svg/user77.svg" class="face">
+            </div>
+            <div class="md-tile-content">
+              <h3>Matteo Badini</h3>
+              <p>Organizzatore</p>
+            </div>
+          </div>
+          </md-button>
+
+          <md-divider></md-divider>
+
+          <md-list>
+            <md-item ng-repeat="element in menu">
+              <md-button ng-click="close()" href="{{ element.link }}">
+                <md-item-content>
+                  <div class="md-tile-left">
+                    <img ng-src="{{ element.image }}" class="menu-icon">
+                  </div>
+                  <div class="md-tile-content">
+                    <h3>{{ element.name }}</h3>
+                  </div>
+              </md-item-content>
+              </md-button>
+            </md-item>
+          </md-list>
+
         </md-content>
       </md-sidenav>
       <md-content flex>
         <div layout="column" flex id="content">
           <md-content layout="column" flex>
-            <ng-view></ng-view>
+            <ng-view style="background:#eeeeee;"></ng-view>
           </md-content>
         </div>
       </md-content>

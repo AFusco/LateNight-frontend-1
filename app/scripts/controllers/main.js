@@ -16,6 +16,24 @@ app.controller('MainCtrl', function($scope, $timeout, $mdSidenav, $log) {
         $log.debug('toggle left is done');
       });
   };
+
+  $scope.menu = [
+    { name: 'LateNight',
+      image:'images/svg/heart75.svg',
+      link: '#/latenight'},
+
+    { name: 'Eventi',
+      image:'images/svg/man204.svg',
+      link: '#/events'},
+
+    { name: 'Biglietti',
+      image:'images/svg/ticket6.svg',
+      link: '#/tickets'},
+
+    { name: 'Attività',
+      image:'images/svg/info.svg',
+      link: '#/activity'},
+  ];
 });
 
 app.controller('LeftCtrl', function($scope, $timeout, $mdSidenav, $log) {
