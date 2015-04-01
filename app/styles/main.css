@@ -125,7 +125,7 @@ https://github.com/google/material-design-icons
   background: inherit;
 }
 
-/* My Material Design CSS*/
+/* My Material Design CSS */
 .md-button.md-fab.md-fab-middle-right {
   margin: -30px 20px;
   right: 20px;
@@ -154,11 +154,9 @@ https://github.com/google/material-design-icons
 .md-whiteframe-material-web {
   box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.26);
   background: #fff;
-  height: auto;
   max-width: 768px;
   min-width: 384px;
-  top: 24px;
-  margin: 0 auto 20px auto;
+  margin: 20px auto;
   position: relative;
   z-index: 2;
 }
@@ -167,13 +165,16 @@ https://github.com/google/material-design-icons
   height: 256px;
   width: 100%;
   background: #673AB7;
-  top: 0;
-  right: 0;
-  left: 0;
-  position:fixed;
+  margin: 0;
+  position: fixed;
   z-index:1;
 }
-
+.toolbar-face {
+  border-radius: 25px;
+  width: 36px;
+  margin: 15px 20px 0 0;
+  color: #ffffff;
+}
 .face {
   border-radius: 70px;
   border: 1px solid #ddd;
@@ -188,4 +189,14 @@ https://github.com/google/material-design-icons
   border: 1px solid #ddd;*/
   width: 32px;
   margin: 16px;
+}
+
+.event-img {
+  max-width: 100%;
+  max-height: 100%;
+  -webkit-transition: .2s all;
+}
+
+.event-img:hover {
+  -webkit-filter: brightness(30%);
 }

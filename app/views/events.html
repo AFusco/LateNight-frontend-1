@@ -1,20 +1,20 @@
-<md-whiteframe class="md-whiteframe-material-web" layout layout-align="center center">
+<md-whiteframe ng-repeat="event in events" class="md-whiteframe-material-web" layout layout-align="center center">
   <md-card style="margin:0;">
-    <img src="{{ events[1].image }}">
+    <img class="event-img" src="{{ event.image }}">
     <md-card-content>
-      <h2 class="md-title">{{ events[1].name }}</h2>
-      <md-checkbox style="margin-top:-48px;" align="right" ng-model="checked1" aria-label="Checkbox 1">
+      <h2 class="md-title">{{ event.name }}</h2>
+      <md-checkbox style="margin-top:-48px;" align="right" ng-model="checked" aria-label="Checkbox 1">
         Mostra tutto
       </md-checkbox>
 
-      <p>{{ event[1].description }}</p>
-      <md-content class="check-element animate-hide" ng-show="checked1">
+      <p>{{ event.description }}</p>
+      <md-content class="check-element animate-hide" ng-show="checked">
         <md-divider></md-divider>
         <md-list>
           <md-item>
             <md-item-content>
               <md-icon md-svg-src="images/svg/date.svg" class="event-icon-list"></md-icon>
-              <p class="event-tile-content">{{ events[1].date }}</p>
+              <p class="event-tile-content">{{ event.date }}</p>
             </md-item-content>
             <md-divider></md-divider>
           </md-item>
@@ -22,73 +22,7 @@
           <md-item>
             <md-item-content>
               <md-icon md-svg-src="images/svg/pin56.svg" class="event-icon-list"></md-icon>
-              <p class="event-tile-content">{{ events[1].location }}</p>
-            </md-item-content>
-          </md-item>
-        </md-list>
-      </md-content>
-    </md-card-content>
-  </md-card>
-</md-whiteframe>
-
-<md-whiteframe class="md-whiteframe-material-web" layout layout-align="center center">
-  <md-card style="margin:0;">
-    <img src="{{ events[2].image }}">
-    <md-card-content>
-      <h2 class="md-title">{{ events[2].name }}</h2>
-      <md-checkbox style="margin-top:-48px;" align="right" ng-model="checked2" aria-label="Checkbox 1">
-        Mostra tutto
-      </md-checkbox>
-
-      <p>{{ event[2].description }}</p>
-      <md-content class="check-element animate-hide" ng-show="checked2">
-        <md-divider></md-divider>
-        <md-list>
-          <md-item>
-            <md-item-content>
-              <md-icon md-svg-src="images/svg/date.svg" class="event-icon-list"></md-icon>
-              <p class="event-tile-content">{{ events[2].date }}</p>
-            </md-item-content>
-            <md-divider></md-divider>
-          </md-item>
-
-          <md-item>
-            <md-item-content>
-              <md-icon md-svg-src="images/svg/pin56.svg" class="event-icon-list"></md-icon>
-              <p class="event-tile-content">{{ events[2].location }}</p>
-            </md-item-content>
-          </md-item>
-        </md-list>
-      </md-content>
-    </md-card-content>
-  </md-card>
-</md-whiteframe>
-
-<md-whiteframe class="md-whiteframe-material-web" layout layout-align="center center">
-  <md-card style="margin:0;">
-    <img src="{{ events[0].image }}">
-    <md-card-content>
-      <h2 class="md-title">{{ events[0].name }}</h2>
-      <md-checkbox style="margin-top:-48px;" align="right" ng-model="checked0" aria-label="Checkbox 1">
-        Mostra tutto
-      </md-checkbox>
-
-      <p>{{ event[0].description }}</p>
-      <md-content class="check-element animate-hide" ng-show="checked0">
-        <md-divider></md-divider>
-        <md-list>
-          <md-item>
-            <md-item-content>
-              <md-icon md-svg-src="images/svg/date.svg" class="event-icon-list"></md-icon>
-              <p class="event-tile-content">{{ events[0].date }}</p>
-            </md-item-content>
-            <md-divider></md-divider>
-          </md-item>
-
-          <md-item>
-            <md-item-content>
-              <md-icon md-svg-src="images/svg/pin56.svg" class="event-icon-list"></md-icon>
-              <p class="event-tile-content">{{ events[0].location }}</p>
+              <p class="event-tile-content">{{ event.location }}</p>
             </md-item-content>
           </md-item>
         </md-list>

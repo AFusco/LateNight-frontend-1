@@ -24,7 +24,7 @@
     <![endif]-->
 
     <!-- Inizio Toolbar -->
-    <md-toolbar style="background:#673AB7; box-shadow: 0px 0px 0px 0 rgba(0, 0, 0, 0.26);">
+    <md-toolbar style="background:#673AB7;">
       <div layout="row">
         <button ng-click="toggleLeft('left')" class="menuBtn">
           <span class="visually-hidden">Menu</span>
@@ -34,9 +34,12 @@
           <img ng-src="images/docArrow.png" width="16px" style="margin-top:5px;">
           <span style="margin: 5px 0 0 10px;">{{ tabName() }}</span>
         </h2>
+        <div>
+          <img ng-src="images/user.jpg" class="toolbar-face">
+        </div>
       </div>
     </md-toolbar>
-    <div class="header"></div>
+    <!--<div class="header"></div>-->
     <!-- Fine Toolbar -->
 
     <!-- Inizio Sidenav Left -->
@@ -46,7 +49,7 @@
           <md-button href="#/login">
           <div layout layout-align="center center">
             <div class="md-tile-left">
-              <img ng-src="images/svg/user77.svg" class="face">
+              <img ng-src="images/user.jpg" class="face">
             </div>
             <div class="md-tile-content">
               <h3>Matteo Badini</h3>
