@@ -34,6 +34,10 @@ app.controller('MainCtrl', function($scope, $timeout, $mdSidenav, $log) {
       image:'images/svg/info.svg',
       link: '#/activity'},
   ];
+
+  $scope.tabName = function() {
+    return document.URL.split('#/')[1].charAt(0).toUpperCase()+document.URL.split('#/')[1].slice(1);
+  }
 });
 
 app.controller('LeftCtrl', function($scope, $timeout, $mdSidenav, $log) {

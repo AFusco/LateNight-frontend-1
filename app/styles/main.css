@@ -7,7 +7,7 @@
 
 body {
   padding: 0;
-  background: #3F51B5;
+  background: #e5e5e5;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -155,15 +155,10 @@ https://github.com/google/material-design-icons
   box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.26);
   background: #fff;
   height: auto;
-  margin: 96px 128px 20px 128px;
-  position: relative;
-  z-index: 2;
-}
-.md-whiteframe-material-web2 {
-  box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.26);
-  background: #fff;
-  height: auto;
-  margin: 0 128px 20px 128px;
+  max-width: 768px;
+  min-width: 384px;
+  top: 24px;
+  margin: 0 auto 20px auto;
   position: relative;
   z-index: 2;
 }

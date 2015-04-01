@@ -1,8 +1,8 @@
 <!doctype html>
-<html class="no-js">
+<html class="no-js"  ng-app="lateNightApp" ng-controller="MainCtrl">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>LateNight | {{ tabName() }}</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -18,17 +18,25 @@
   </head>
 
 
-  <body layout="column" ng-app="lateNightApp" ng-controller="MainCtrl">
+  <body layout="column">
     <!--[if lt IE 7]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <!-- Inizio Toolbar -->
-    <div class="header">
-      <button ng-click="toggleLeft('left')" class="menuBtn">
-        <span class="visually-hidden">Menu</span>
-      </button>
-    </div>
+    <md-toolbar style="background:#673AB7; box-shadow: 0px 0px 0px 0 rgba(0, 0, 0, 0.26);">
+      <div layout="row">
+        <button ng-click="toggleLeft('left')" class="menuBtn">
+          <span class="visually-hidden">Menu</span>
+        </button>
+        <h2 class="md-toolbar-tools">
+          <span style="margin: 5px 10px 0 0;">LateNight</span>
+          <img ng-src="images/docArrow.png" width="16px" style="margin-top:5px;">
+          <span style="margin: 5px 0 0 10px;">{{ tabName() }}</span>
+        </h2>
+      </div>
+    </md-toolbar>
+    <div class="header"></div>
     <!-- Fine Toolbar -->
 
     <!-- Inizio Sidenav Left -->
