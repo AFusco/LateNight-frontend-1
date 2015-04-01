@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js"  ng-app="lateNightApp" ng-controller="MainCtrl">
+<html class="no-js" ng-app="lateNightApp" ng-controller="MainCtrl">
   <head>
     <meta charset="utf-8">
     <title>LateNight | {{ tabName() }}</title>
@@ -18,13 +18,13 @@
   </head>
 
 
-  <body layout="column">
+  <body>
     <!--[if lt IE 7]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <!-- Inizio Toolbar -->
-    <md-toolbar style="background:#673AB7;">
+    <md-toolbar class="toolbar-material" style="background: #673AB7;">
       <div layout="row">
         <button ng-click="toggleLeft('left')" class="menuBtn">
           <span class="visually-hidden">Menu</span>
@@ -39,7 +39,6 @@
         </div>
       </div>
     </md-toolbar>
-    <!--<div class="header"></div>-->
     <!-- Fine Toolbar -->
 
     <!-- Inizio Sidenav Left -->

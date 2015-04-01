@@ -158,17 +158,17 @@ https://github.com/google/material-design-icons
   min-width: 384px;
   margin: 20px auto;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
-.header {
-  height: 256px;
-  width: 100%;
-  background: #673AB7;
-  margin: 0;
-  position: fixed;
-  z-index:1;
+.event-search {
+  max-width: 768px;
+  min-width: 384px;
+  margin: 20px auto;
+  position: relative;
+  z-index: 1;
 }
+
 .toolbar-face {
   border-radius: 25px;
   width: 36px;
@@ -199,4 +199,10 @@ https://github.com/google/material-design-icons
 
 .event-img:hover {
   -webkit-filter: brightness(30%);
+}
+
+.toolbar-material {
+  background: #673AB7;
+  position: fixed;
+  z-index: 2;
 }

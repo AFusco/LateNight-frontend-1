@@ -1,4 +1,14 @@
-<md-whiteframe ng-repeat="event in events" class="md-whiteframe-material-web" layout layout-align="center center">
+<br /><br /><br /><br />
+<div class="event-search">
+<md-input-container flex>
+  <label class="md-label-input">Cerca Evento</label>
+  <input class="md-label-input" ng-model="search">
+  <md-icon md-svg-src="images/svg/search19.svg" class="md-icon-input"></md-icon>
+</md-input-container>
+</div>
+
+
+<md-whiteframe ng-repeat="event in events | filter:search" class="md-whiteframe-material-web" layout layout-align="center center">
   <md-card style="margin:0;">
     <img class="event-img" src="{{ event.image }}">
     <md-card-content>
