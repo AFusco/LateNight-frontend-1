@@ -24,17 +24,29 @@
     <![endif]-->
 
     <!-- Inizio Toolbar -->
-    <md-toolbar class="toolbar-material" style="background: #673AB7;">
+    <md-toolbar class="toolbar-material" style="background: #673AB7; box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.26);">
       <div layout="row">
         <button ng-click="toggleLeft('left')" class="menuBtn">
           <span class="visually-hidden">Menu</span>
         </button>
         <h2 class="md-toolbar-tools">
           <span style="margin: 5px 10px 0 0;">LateNight</span>
-          <img ng-src="images/docArrow.png" width="16px" style="margin-top:5px;">
+          <img ng-src="images/docArrow.png" width="16px" style="margin:5px 0 0 0;">
           <span style="margin: 5px 0 0 10px;">{{ tabName() }}</span>
         </h2>
-        <div>
+        <!-- Search input -->
+        <div class="div-toolbar-search">
+          <input ng-model="search" type="text" placeholder="Cerca" class="toolbar-search">
+        </div>
+
+        <!-- Icon on the right -->
+        <div style="margin: 0 10px 0 10px;">
+          <md-icon md-svg-icon="images/svg/calendar.svg" class="toolbar-icon"></md-icon>
+        </div>
+        <div style="margin: 0 10px 0 10px;">
+          <md-icon md-svg-icon="images/svg/bell.svg" class="toolbar-icon"></md-icon>
+        </div>
+        <div style="margin: 0 10px 0 10px;">
           <img ng-src="images/user.jpg" class="toolbar-face">
         </div>
       </div>
@@ -44,7 +56,7 @@
     <!-- Inizio Sidenav Left -->
     <section layout="row" flex>
       <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left">
-        <md-content class="md-padding" ng-controller="LeftCtrl">
+        <md-content class="md-padding" ng-controller="MainCtrl">
           <md-button href="#/login">
           <div layout layout-align="center center">
             <div class="md-tile-left">

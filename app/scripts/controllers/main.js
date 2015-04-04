@@ -10,6 +10,12 @@
 var app = angular.module('lateNightApp');
 
 app.controller('MainCtrl', function($scope, $timeout, $mdSidenav, $log) {
+  $scope.close = function() {
+    $mdSidenav('left').close()
+      .then(function(){
+        $log.debug('close LEFT is done');
+      });
+  };
   $scope.toggleLeft = function() {
     $mdSidenav('left').toggle()
       .then(function(){
@@ -37,14 +43,5 @@ app.controller('MainCtrl', function($scope, $timeout, $mdSidenav, $log) {
 
   $scope.tabName = function() {
     return document.URL.split('#/')[1].charAt(0).toUpperCase()+document.URL.split('#/')[1].slice(1);
-  }
-});
-
-app.controller('LeftCtrl', function($scope, $timeout, $mdSidenav, $log) {
-  $scope.close = function() {
-    $mdSidenav('left').close()
-      .then(function(){
-        $log.debug('close LEFT is done');
-      });
   };
 });

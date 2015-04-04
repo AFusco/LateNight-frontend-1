@@ -169,10 +169,40 @@ https://github.com/google/material-design-icons
   z-index: 1;
 }
 
+.div-toolbar-search {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  font-size: inherit;
+  font-weight: normal;
+  margin: 0 10px 0 10px;
+  width: 300px;
+}
+.toolbar-search {
+  background: #7E57C2 url(../images/svg/search19.svg) 10px no-repeat;
+  background-size: 22px;
+  height: 45px;
+  border: 0;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  padding: 0 0 0 50px;
+  color: #fff;
+}
+.toolbar-icon {
+  width: 26px;
+  margin: 20px 10px 0 0px;
+}
 .toolbar-face {
   border-radius: 25px;
   width: 36px;
-  margin: 15px 20px 0 0;
+  margin: 15px 30px 0 0;
   color: #ffffff;
 }
 .face {
@@ -202,7 +232,6 @@ https://github.com/google/material-design-icons
 }
 
 .toolbar-material {
-  background: #673AB7;
   position: fixed;
   z-index: 2;
 }
