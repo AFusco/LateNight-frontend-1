@@ -13,6 +13,7 @@
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/event.css">
     <!-- endbuild -->
     <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
   </head>
@@ -24,33 +25,43 @@
     <![endif]-->
 
     <!-- Inizio Toolbar -->
-    <md-toolbar class="toolbar-material" style="background: #673AB7; box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.26);">
-      <div layout="row">
-        <button ng-click="toggleLeft('left')" class="menuBtn">
-          <span class="visually-hidden">Menu</span>
-        </button>
-        <h2 class="md-toolbar-tools">
-          <span style="margin: 5px 10px 0 0;">LateNight</span>
-          <img ng-src="images/docArrow.png" width="16px" style="margin:5px 0 0 0;">
-          <span style="margin: 5px 0 0 10px;">{{ tabName() }}</span>
-        </h2>
-        <!-- Search input -->
-        <div class="div-toolbar-search">
-          <input ng-model="search" type="text" placeholder="Cerca" class="toolbar-search">
-        </div>
+    <div class="div-toolbar-material">
+      <md-toolbar class="toolbar">
+        <div layout="row">
+          <!-- Menu button and location -->
+          <button ng-click="toggleLeft('left')" class="menuBtn">
+            <span class="visually-hidden">Menu</span>
+          </button>
+          <div class="div-toolbar-location">
+            <span class="title">LateNight</span>
+            <img class="separator" ng-src="images/docArrow.png">
+            <span class="subtitle">{{ tabName() }}</span>
+          </div>
 
-        <!-- Icon on the right -->
-        <div style="margin: 0 10px 0 10px;">
-          <md-icon md-svg-icon="images/svg/calendar.svg" class="toolbar-icon"></md-icon>
+          <!-- Search input -->
+          <div class="div-toolbar-search">
+            <input ng-model="search" type="text" placeholder="Cerca" class="search">
+          </div>
+
+          <!-- Icon on the right -->
+          <div class="div-toolbar-button">
+            <button class="calendarBtn">
+              <span class="visually-hidden">Calendar</span>
+            </button>
+          </div>
+          <div class="div-toolbar-button">
+            <button class="bellBtn">
+              <span class="visually-hidden">Bell</span>
+            </button>
+          </div>
+          <div class="div-toolbar-button">
+            <button class="userBtn">
+              <span class="visually-hidden">Account</span>
+            </button>
+          </div>
         </div>
-        <div style="margin: 0 10px 0 10px;">
-          <md-icon md-svg-icon="images/svg/bell.svg" class="toolbar-icon"></md-icon>
-        </div>
-        <div style="margin: 0 10px 0 10px;">
-          <img ng-src="images/user.jpg" class="toolbar-face">
-        </div>
-      </div>
-    </md-toolbar>
+      </md-toolbar>
+    </div>
     <!-- Fine Toolbar -->
 
     <!-- Inizio Sidenav Left -->

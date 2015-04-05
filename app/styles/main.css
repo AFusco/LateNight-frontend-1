@@ -126,6 +126,8 @@ https://github.com/google/material-design-icons
 }
 
 /* My Material Design CSS */
+
+/* Sidenav CSS Inizio */
 .md-button.md-fab.md-fab-middle-right {
   margin: -30px 20px;
   right: 20px;
@@ -140,71 +142,6 @@ https://github.com/google/material-design-icons
   margin: 15px 0 0 5px;
 }
 
-/**
- * My content list item CSS.
- */
-.event-tile-content {
-  margin: 15px 0 15px 10px;
-  font-size: 1.0em;
-}
-.event-icon-list {
-  margin: 0 0 0 5px;
-}
-
-.md-whiteframe-material-web {
-  box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.26);
-  background: #fff;
-  max-width: 768px;
-  min-width: 384px;
-  margin: 20px auto;
-  position: relative;
-  z-index: 1;
-}
-
-.event-search {
-  max-width: 768px;
-  min-width: 384px;
-  margin: 20px auto;
-  position: relative;
-  z-index: 1;
-}
-
-.div-toolbar-search {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  font-size: inherit;
-  font-weight: normal;
-  margin: 0 10px 0 10px;
-  width: 300px;
-}
-.toolbar-search {
-  background: #7E57C2 url(../images/svg/search19.svg) 10px no-repeat;
-  background-size: 22px;
-  height: 45px;
-  border: 0;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  padding: 0 0 0 50px;
-  color: #fff;
-}
-.toolbar-icon {
-  width: 26px;
-  margin: 20px 10px 0 0px;
-}
-.toolbar-face {
-  border-radius: 25px;
-  width: 36px;
-  margin: 15px 30px 0 0;
-  color: #ffffff;
-}
 .face {
   border-radius: 70px;
   border: 1px solid #ddd;
@@ -220,18 +157,126 @@ https://github.com/google/material-design-icons
   width: 32px;
   margin: 16px;
 }
+/* Sidenav CSS Fine */
 
-.event-img {
-  max-width: 100%;
-  max-height: 100%;
-  -webkit-transition: .2s all;
-}
-
-.event-img:hover {
-  -webkit-filter: brightness(30%);
-}
-
-.toolbar-material {
+/* Toolbar CSS Inizio */
+.div-toolbar-material {
+  margin: 0;
+  padding: 0;
+  height: 64px;
+  width: 100%;
   position: fixed;
   z-index: 2;
+  box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -webkit-box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -o-box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.26);
 }
+.div-toolbar-material .toolbar {
+  background-color: #673AB7;
+}
+.menuBtn {
+  background-color: transparent;
+  border: none;
+  height: 38px;
+  margin: 16px 0 0 16px;
+  width: 36px;
+}
+.div-toolbar-location {
+  font-size: inherit;
+  font-weight: normal;
+  padding: 0 16px;
+  margin: 20px 0 0 0;
+  width: 100%;
+}
+.div-toolbar-location .title {
+  margin: 5px 10px 0 0;
+}
+.div-toolbar-location img {
+  margin:5px 0 0 0;
+  width: 16px;
+}
+.div-toolbar-location .subtitle {
+  margin: 5px 0 0 10px;
+}
+.div-toolbar-search {
+  background: #7E57C2;
+  margin: 5px 10px 5px 0;
+  height: 54px;
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  font-size: inherit;
+  font-weight: normal;
+  display: none;
+}
+.div-toolbar-search input.search {
+  background: #7E57C2 url(../images/svg/search19.svg) 10px no-repeat;
+  background-size: 22px;
+  height: 54px;
+  border: none;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  padding: 0 0 0 50px;
+  color: #fff;
+}
+.div-toolbar-button {
+  margin: 0 15px 0 10px;
+  float: right;
+}
+.div-toolbar-button .calendarBtn {
+  background: transparent url(../images/svg/calendar.svg) no-repeat center center;
+  border: none;
+  height: 38px;
+  margin: 16px 10px 0 0;
+  width: 36px;
+}
+.div-toolbar-button .bellBtn {
+  background: transparent url(../images/svg/bell.svg) no-repeat center center;
+  border: none;
+  height: 38px;
+  margin: 16px 10px 0 0;
+  width: 36px;
+}
+.div-toolbar-button .userBtn {
+  background: transparent url(../images/user.jpg) no-repeat center center;
+  background-size: 36px 36px;
+  border-radius: 25px;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border: none;
+  margin: 16px 20px 0 0;
+  width: 36px;
+  height: 36px;
+}
+.div-toolbar-button .icon {
+  width: 26px;
+  margin: 20px 10px 0 0;
+}
+.div-toolbar-button .face {
+  border-radius: 25px;
+  border: 0;
+  width: 36px;
+  margin: 15px 30px 0 0;
+  color: #ffffff;
+}
+/* Toolbar CSS Fine */
+
+@media only screen and (max-width: 960px) {
+  .div-toolbar-button {
+    display: none;
+  }
+  .toolbar-icon {
+    display: none;
+  }
+  .div-toolbar-location .title, .separator {
+    display: none;
+  }
+  .div-toolbar-search {
+    display: block;
+  }
+}
+

@@ -1,0 +1,43 @@
+/* Event CSS */
+.md-whiteframe-material-web {
+  box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.26);
+  background: #fff;
+  max-width: 768px;
+  min-width: 384px;
+  margin: 20px auto;
+  position: relative;
+  z-index: 1;
+}
+.event-tile-content {
+  margin: 15px 0 15px 10px;
+  font-size: 1.0em;
+}
+.event-icon-list {
+  margin: 0 0 0 5px;
+}
+.event-search {
+  max-width: 768px;
+  min-width: 384px;
+  margin: 20px auto;
+  position: relative;
+  z-index: 1;
+}
+.event-img {
+  max-width: 100%;
+  max-height: 100%;
+  -webkit-transition: .2s all;
+}
+.event-img:hover {
+  -webkit-filter: brightness(30%);
+}
+
+.div-event-widget {
+  margin: 70px 20px 0 10px;
+  display:none;
+}
+
+@media only screen and (min-width: 960px) {
+  .div-event-widget {
+    display: block;
+  }
+}
