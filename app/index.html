@@ -67,38 +67,39 @@
     <!-- Inizio Sidenav Left -->
     <section layout="row" flex>
       <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left">
-        <md-content class="md-padding" ng-controller="MainCtrl">
-          <md-button href="#/login">
-          <div layout layout-align="center center">
-            <div class="md-tile-left">
-              <img ng-src="images/user.jpg" class="face">
+        <md-content ng-controller="MainCtrl">
+          <div class="div-sidenav-face" layout-align="center">
+            <div>
+              <a href="#/login"><img href="#/login" ng-src="images/user.jpg" class="menu-face"></a>
             </div>
-            <div class="md-tile-content">
+            <div class="menu-profile">
               <h3>Matteo Badini</h3>
               <p>Organizzatore</p>
             </div>
           </div>
-          </md-button>
 
           <md-divider></md-divider>
 
-          <md-list>
-            <md-item ng-repeat="element in menu">
-              <md-button ng-click="close()" href="{{ element.link }}">
-                <md-item-content>
-                  <div class="md-tile-left">
-                    <img ng-src="{{ element.image }}" class="menu-icon">
-                  </div>
-                  <div class="md-tile-content">
-                    <h3>{{ element.name }}</h3>
-                  </div>
-              </md-item-content>
-              </md-button>
-            </md-item>
-          </md-list>
-
+          <div>
+            <md-list>
+              <md-item ng-repeat="element in menu">
+                <md-button class="menu-button" ng-click="close()" href="{{ element.link }}">
+                  <md-item-content>
+                    <div class="md-tile-left">
+                      <img ng-src="{{ element.image }}" class="menu-icon">
+                    </div>
+                    <div class="md-tile-content">
+                      <h3>{{ element.name }}</h3>
+                    </div>
+                  </md-item-content>
+                </md-button>
+              </md-item>
+            </md-list>
+          </div>
         </md-content>
       </md-sidenav>
+
+      <!-- Right column View -->
       <md-content flex>
         <div layout="column" flex id="content">
           <md-content layout="column" flex>
