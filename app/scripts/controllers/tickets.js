@@ -7,12 +7,4 @@
  */
 'use strict';
 
-var app = angular.module('lateNightApp');
-
-app.controller('TicketsCtrl', function ($scope) {
-    $scope.tickets = [
-        {idTicket: 1, name: 'Estragon - Random Party', idParty:234},
-        {idTicket: 2, name: 'Vintage - Closing Party', idParty:543},
-        {idTicket: 3, name: 'Matis - Fuori Corso', idParty:732}
-    ];
-});
+//var app = angular.module('lateNightApp');

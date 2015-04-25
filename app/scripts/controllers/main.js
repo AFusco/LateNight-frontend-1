@@ -35,10 +35,6 @@ app.controller('MainCtrl', function($scope, $timeout, $mdSidenav, $log) {
     { name: 'Biglietti',
       image:'images/svg/ticket6.svg',
       link: '#/tickets'},
-
-    { name: 'Attività',
-      image:'images/svg/info.svg',
-      link: '#/activity'},
   ];
 
   $scope.tabName = function() {

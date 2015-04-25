@@ -13,100 +13,32 @@
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/event.css">
+    <link rel="stylesheet" href="styles/events.css">
+    <link rel="stylesheet" href="styles/tickets.css">
     <!-- endbuild -->
     <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
   </head>
 
 
   <body>
-    <!--[if lt IE 7]>
-    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-
     <!-- Inizio Toolbar -->
-    <div class="div-toolbar-material">
-      <md-toolbar class="toolbar">
-        <div layout="row">
-          <!-- Menu button and location -->
-          <button ng-click="toggleLeft('left')" class="menuBtn">
-            <span class="visually-hidden">Menu</span>
-          </button>
-          <div class="div-toolbar-location">
-            <span class="title">LateNight</span>
-            <img class="separator" ng-src="images/docArrow.png">
-            <span class="subtitle">{{ tabName() }}</span>
-          </div>
-
-          <!-- Search input -->
-          <div class="div-toolbar-search">
-            <input ng-model="search" type="text" placeholder="Cerca" class="search">
-          </div>
-
-          <!-- Icon on the right -->
-          <div class="div-toolbar-button">
-            <button class="calendarBtn">
-              <span class="visually-hidden">Calendar</span>
-            </button>
-          </div>
-          <div class="div-toolbar-button">
-            <button class="bellBtn">
-              <span class="visually-hidden">Bell</span>
-            </button>
-          </div>
-          <div class="div-toolbar-button">
-            <button class="userBtn">
-              <span class="visually-hidden">Account</span>
-            </button>
-          </div>
-        </div>
-      </md-toolbar>
+    <div id="header">
+      <button ng-click="toggleLeft('left')" class="menuBtn">
+        <span class="visually-hidden">Menu</span>
+      </button>
     </div>
     <!-- Fine Toolbar -->
 
     <!-- Inizio Sidenav Left -->
     <section layout="row" flex>
       <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left">
-        <md-content ng-controller="MainCtrl">
-          <div class="div-sidenav-face" layout-align="center">
-            <div>
-              <a href="#/login"><img href="#/login" ng-src="images/user.jpg" class="menu-face"></a>
-            </div>
-            <div class="menu-profile">
-              <h3>Matteo Badini</h3>
-              <p>Organizzatore</p>
-            </div>
-          </div>
-
-          <md-divider></md-divider>
-
-          <div>
-            <md-list>
-              <md-item ng-repeat="element in menu">
-                <md-button class="menu-button" ng-click="close()" href="{{ element.link }}">
-                  <md-item-content>
-                    <div class="md-tile-left">
-                      <img ng-src="{{ element.image }}" class="menu-icon">
-                    </div>
-                    <div class="md-tile-content">
-                      <h3>{{ element.name }}</h3>
-                    </div>
-                  </md-item-content>
-                </md-button>
-              </md-item>
-            </md-list>
-          </div>
-        </md-content>
+        <p>Menu</p>
       </md-sidenav>
 
       <!-- Right column View -->
-      <md-content flex>
-        <div layout="column" flex id="content">
-          <md-content layout="column" flex>
-            <ng-view style="background:#eeeeee;"></ng-view>
-          </md-content>
-        </div>
-      </md-content>
+      <div id="container">
+        <ng-view></ng-view>
+      </div>
     </section>
     <!-- Fine Sidenav Left -->
 
@@ -140,8 +72,6 @@
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers/main.js"></script>
-    <script src="scripts/controllers/login.js"></script>
-    <script src="scripts/controllers/about.js"></script>
     <script src="scripts/controllers/events.js"></script>
     <script src="scripts/controllers/tickets.js"></script>
     <!-- endbuild -->

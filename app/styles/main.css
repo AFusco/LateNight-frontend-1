@@ -1,309 +1,48 @@
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
-
 body {
+  margin: 0;
   padding: 0;
   background: #e5e5e5;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 10px;
-}
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-  padding-bottom: 19px;
-}
-
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
-}
-
-.container-narrow > hr {
-  margin: 30px 0;
-}
-
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-}
-.jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
-}
-
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-}
-.marketing p + h4 {
-  margin-top: 28px;
-}
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
-}
-
-
-.menuBtn {
-  background-color: transparent;
-  border: none;
-  height: 38px;
-  margin: 16px 0 0 16px;
-  width: 36px;
-}
-md-toolbar h1 {
-  font-weight: normal;
-}
-md-list .md-button {
-  color: inherit;
-  font-weight: 500;
-  text-align: left;
-  width: 100%;
-}
-
-/* Using Data-URI converted from svg until <md-icon> becomes available
-https://github.com/google/material-design-icons
-*/
-.menuBtn {
-  background: transparent url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0IDI0IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGcgaWQ9IkhlYWRlciI+CiAgICA8Zz4KICAgICAgICA8cmVjdCB4PSItNjE4IiB5PSItMjIzMiIgZmlsbD0ibm9uZSIgd2lkdGg9IjE0MDAiIGhlaWdodD0iMzYwMCIvPgogICAgPC9nPgo8L2c+CjxnIGlkPSJMYWJlbCI+CjwvZz4KPGcgaWQ9Ikljb24iPgogICAgPGc+CiAgICAgICAgPHJlY3QgZmlsbD0ibm9uZSIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0Ii8+CiAgICAgICAgPHBhdGggZD0iTTMsMThoMTh2LTJIM1YxOHogTTMsMTNoMTh2LTJIM1YxM3ogTTMsNnYyaDE4VjZIM3oiIHN0eWxlPSJmaWxsOiNmM2YzZjM7Ii8+CiAgICA8L2c+CjwvZz4KPGcgaWQ9IkdyaWQiIGRpc3BsYXk9Im5vbmUiPgogICAgPGcgZGlzcGxheT0iaW5saW5lIj4KICAgIDwvZz4KPC9nPgo8L3N2Zz4=) no-repeat  center center;
-}
-
-.animate-hide {
-  -webkit-transition: all linear 0.25s;
-  transition: all linear 0.25s;
-  line-height: 20px;
-  opacity: 1;
-  background: inherit;
-}
-
-.animate-hide.ng-hide {
-  line-height: 0;
-  opacity: 0;
-}
-
-.check-element {
-  background: inherit;
-}
-
-/* My Material Design CSS */
-
-/* Sidenav CSS Inizio */
-.div-sidenav-face {
-  margin: 0;
-  padding: 0;
-}
-.div-sidenav-face .menu-face {
-  border-radius: 65px;
-  border: none;
-  width: 100px;
-  margin: 20px 20px 10px 20px;
-}
-.div-sidenav-face .menu-profile {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  padding: 10px 0 20px 20px;
-  text-overflow: ellipsis;
-}
-.div-sidenav-face .menu-profile h3 {
-  margin: 0 0 3px 0;
-  font-weight: 400;
-  font-size: 1.2em;
-}
-.div-sidenav-face .menu-profile p {
-  margin: 0 0 3px 0;
-  font-size: 0.75em;
-}
-.menu-button {
-  border-radius: 0;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-}
-.menu-icon {
-  /*border-radius: 30px;
-  border: 1px solid #ddd;*/
-  width: 32px;
-  margin: 16px;
-}
-/* Sidenav CSS Fine */
-
-/* Toolbar CSS Inizio */
-.div-toolbar-material {
-  margin: 0;
-  padding: 0;
+/* Toolbar */
+#header {
+  background-color: #2e3842;
   height: 64px;
   width: 100%;
   position: fixed;
-  z-index: 2;
+  z-index: 100;
   box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.26);
   -webkit-box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.26);
   -moz-box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.26);
   -o-box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.26);
 }
-.div-toolbar-material .toolbar {
-  background-color: #673AB7;
-}
+
 .menuBtn {
-  background-color: transparent;
+  background: transparent url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0IDI0IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGcgaWQ9IkhlYWRlciI+CiAgICA8Zz4KICAgICAgICA8cmVjdCB4PSItNjE4IiB5PSItMjIzMiIgZmlsbD0ibm9uZSIgd2lkdGg9IjE0MDAiIGhlaWdodD0iMzYwMCIvPgogICAgPC9nPgo8L2c+CjxnIGlkPSJMYWJlbCI+CjwvZz4KPGcgaWQ9Ikljb24iPgogICAgPGc+CiAgICAgICAgPHJlY3QgZmlsbD0ibm9uZSIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0Ii8+CiAgICAgICAgPHBhdGggZD0iTTMsMThoMTh2LTJIM1YxOHogTTMsMTNoMTh2LTJIM1YxM3ogTTMsNnYyaDE4VjZIM3oiIHN0eWxlPSJmaWxsOiNmM2YzZjM7Ii8+CiAgICA8L2c+CjwvZz4KPGcgaWQ9IkdyaWQiIGRpc3BsYXk9Im5vbmUiPgogICAgPGcgZGlzcGxheT0iaW5saW5lIj4KICAgIDwvZz4KPC9nPgo8L3N2Zz4=) no-repeat  center center;
   border: none;
   height: 38px;
   margin: 16px 0 0 16px;
   width: 36px;
 }
-.div-toolbar-location {
-  font-size: inherit;
-  font-weight: normal;
-  padding: 0 16px;
-  margin: 20px 0 0 0;
-  width: 100%;
-}
-.div-toolbar-location .title {
-  margin: 5px 10px 0 0;
-}
-.div-toolbar-location img {
-  margin:5px 0 0 0;
-  width: 16px;
-}
-.div-toolbar-location .subtitle {
-  margin: 5px 0 0 10px;
-}
-.div-toolbar-search {
-  background: #7E57C2;
-  margin: 5px 10px 5px 0;
-  height: 54px;
-  width: 100%;
-  border: none;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  font-size: inherit;
-  font-weight: normal;
-  display: none;
-}
-.div-toolbar-search input.search {
-  background: #7E57C2 url(../images/svg/search19.svg) 10px no-repeat;
-  background-size: 22px;
-  height: 54px;
-  border: none;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  padding: 0 0 0 50px;
-  color: #fff;
-}
-.div-toolbar-button {
-  margin: 0 15px 0 10px;
-  float: right;
-}
-.div-toolbar-button .calendarBtn {
-  background: transparent url(../images/svg/calendar.svg) no-repeat center center;
-  border: none;
-  height: 38px;
-  margin: 16px 10px 0 0;
-  width: 36px;
-}
-.div-toolbar-button .bellBtn {
-  background: transparent url(../images/svg/bell.svg) no-repeat center center;
-  border: none;
-  height: 38px;
-  margin: 16px 10px 0 0;
-  width: 36px;
-}
-.div-toolbar-button .userBtn {
-  background: transparent url(../images/user.jpg) no-repeat center center;
-  background-size: 36px 36px;
-  border-radius: 25px;
-  -moz-border-radius: 25px;
-  -webkit-border-radius: 25px;
-  border: none;
-  margin: 16px 20px 0 0;
-  width: 36px;
-  height: 36px;
-}
-.div-toolbar-button .icon {
-  width: 26px;
-  margin: 20px 10px 0 0;
-}
-.div-toolbar-button .face {
-  border-radius: 25px;
-  border: 0;
-  width: 36px;
-  margin: 15px 30px 0 0;
-  color: #ffffff;
-}
-/* Toolbar CSS Fine */
 
+
+/* Sidenav Left*/
+
+
+
+/* Sidenav Right*/
+#container {
+  margin: 64px 0 0 0;
+  padding: 15px;
+}
+
+
+/* Tablet */
 @media only screen and (max-width: 960px) {
-  .div-toolbar-location {
-    width: 30px;
-  }
-  .div-toolbar-button {
-    display: none;
-  }
-  .toolbar-icon {
-    display: none;
-  }
-  .div-toolbar-location .title, .separator, .subtitle {
-    display: none;
-  }
-  .div-toolbar-search {
-    display: block;
-  }
+
 }
 
+/* Phones */
+@media only screen and (max-width: 600px) {
 
-
-/* Da togliere */
-.md-button.md-fab.md-fab-middle-right {
-  margin: -30px 20px;
-  right: 20px;
-  left: auto;
-  position: absolute;
-}
-
-.md-label-input {
-  margin-left: 50px;
-}
-.md-icon-input {
-  margin: 15px 0 0 5px;
 }
