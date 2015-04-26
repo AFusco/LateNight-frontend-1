@@ -128,7 +128,7 @@ body {
   position: absolute;
   left: 50px;
   top: 0;
-  right: 10px;
+  right: 55px;
   margin: 0 0 0 20px;
 }
 .toolbarSearch {
@@ -142,21 +142,18 @@ body {
   width: 100%;
   height: 44px;
   margin: 10px 0 0 0;
-  padding: 0 0 0 0;
+  padding: 0 0 0 45px;
   color: #ffffff;
   left: 100px;
 }
-.toolbarSearch::-webkit-input-placeholder {
+.toolbarSearch::-webkit-input-placeholder{
   color: #2e3842;
-  padding: 0 0 0 40px;
 }
 .toolbarSearch:-ms-input-placeholder {
   color: #2e3842;
-  padding: 0 0 0 40px;
 }
 .toolbarSearch::-moz-placeholder {
   color: #2e3842;
-  padding: 0 0 0 40px;
 }
 
 /* Tablet */
@@ -177,8 +174,49 @@ body {
 }
 
 /* Sidenav Left*/
+.menuProfile {
+  position: absolute;
+  top: 64px;
+  width: 100%;
+  height: 150px;
+  text-align: left;
+  vertical-align: middle;
+}
+.menuPicture {
+  margin: 25px 20px 0 25px;
+  width: 100px;
+  height: 100px;
+  border: none;
+  border-radius: 100%;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  float: left;
+}
+.menuUser {
+  margin: 50px 0 0 20px;
+  line-height: 130%;
+  color: #ffffff;
+}
 
+.menuButtons {
+  position: absolute;
+  top: 214px;
+  width: 100%;
+  margin: 20px 0 0 0;
 
+}
+.eventBtn {
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 100%;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  margin: 13px 16px 0 0;
+}
+.eventBtn:hover {
+  background: #3e4953;
+}
 
 /* Sidenav Right*/
 #container {
