@@ -42,7 +42,7 @@ app.controller('MainCtrl', function($scope, $timeout, $mdSidenav, $log) {
   };
 
   $scope.profilePic = function() {
-    return 'images/user.jpg';
+    return 'images/toolbar/avatar.png';
   };
 
   $scope.profileName = function() {
@@ -50,6 +50,7 @@ app.controller('MainCtrl', function($scope, $timeout, $mdSidenav, $log) {
   };
 
   $scope.profileRole = function() {
-    return 'Administrator';
+    return 'Admin';
   };
+
 });

@@ -1,0 +1,28 @@
+#loginHeader {
+  position: absolute;
+  top: 0;
+  background: transparent url(../images/bg.jpg) no-repeat center center;
+  filter: brightness(0.5);
+  -webkit-filter: brightness(0.5);
+  -moz-filter: brightness(0.5);
+  -o-filter: brightness(0.5);
+  height: 400px;
+  width: 100%;
+}
+#loginContent {
+  position: absolute;
+  width: 100%;
+  top: 420px;
+}
+.loginForm {
+  background: #ffffff;
+  width: 400px;
+  margin: 20px 20px 20px 20px;
+  float: left;
+}
+.registrationForm {
+  background: #ffffff;
+  width: 400px;
+  margin: 20px 20px 20px 10px;
+  float: right;
+}

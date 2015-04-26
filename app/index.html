@@ -12,9 +12,11 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/events.css">
     <link rel="stylesheet" href="styles/tickets.css">
+    <link rel="stylesheet" href="styles/login.css">
     <!-- endbuild -->
     <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
   </head>
@@ -31,32 +33,38 @@
             </button>
           </li>
           <li>
-            <h3>LateNight</h3>
+            <h3 class="title">LateNight</h3>
           </li>
           <li>
             <img class="toolbarArrow"src="../images/toolbar/docArrow.png">
           </li>
           <li>
-            <h3>{{ tabName() }}</h3>
+            <h3 class="page">{{ tabName() }}</h3>
           </li>
         </ul>
+      </div>
+
+      <div class="center">
+        <input type="search" class="toolbarSearch" placeholder="Cerca eventi"/>
       </div>
 
       <div class="right">
         <ul>
           <li>
-            <span>{{ profileName() + ' ' + profileRole()}}</span>
-          </li>
-          <li>
             <button class="profileBtn">
-              <img src="{{ profilePic() }}">
+              <img class="profilePic" src="{{ profilePic() }}">
+              <span class="profileName">{{ profileName() + ' ' + profileRole()}}</span>
             </button>
           </li>
           <li>
-            <button class="calendarBtn"></button>
+            <button class="calendarBtn">
+              <span class="visually-hidden">Calendar</span>
+            </button>
           </li>
           <li>
-            <button class="notifyBtn"></button>
+            <button class="notifyBtn">
+              <span class="visually-hidden">Notify</span>
+            </button>
           </li>
         </ul>
       </div>
