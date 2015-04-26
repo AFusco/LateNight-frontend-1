@@ -40,4 +40,16 @@ app.controller('MainCtrl', function($scope, $timeout, $mdSidenav, $log) {
   $scope.tabName = function() {
     return document.URL.split('#/')[1].charAt(0).toUpperCase()+document.URL.split('#/')[1].slice(1);
   };
+
+  $scope.profilePic = function() {
+    return 'images/user.jpg';
+  };
+
+  $scope.profileName = function() {
+    return 'Matteo Badini';
+  };
+
+  $scope.profileRole = function() {
+    return 'Administrator';
+  };
 });

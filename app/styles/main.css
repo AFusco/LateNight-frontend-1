@@ -1,6 +1,8 @@
-body {
+body, div, ul, li, button, img {
   margin: 0;
   padding: 0;
+}
+body {
   background: #e5e5e5;
 }
 
@@ -16,13 +18,78 @@ body {
   -moz-box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.26);
   -o-box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.26);
 }
-
-.menuBtn {
+#header .left {
+  float: left;
+  height: 64px;
+  vertical-align: middle;
+}
+#header .left ul li{
+  display: inline;
+  list-style: none;
+  float: left;
+}
+#header .menuBtn {
   background: transparent url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0IDI0IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGcgaWQ9IkhlYWRlciI+CiAgICA8Zz4KICAgICAgICA8cmVjdCB4PSItNjE4IiB5PSItMjIzMiIgZmlsbD0ibm9uZSIgd2lkdGg9IjE0MDAiIGhlaWdodD0iMzYwMCIvPgogICAgPC9nPgo8L2c+CjxnIGlkPSJMYWJlbCI+CjwvZz4KPGcgaWQ9Ikljb24iPgogICAgPGc+CiAgICAgICAgPHJlY3QgZmlsbD0ibm9uZSIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0Ii8+CiAgICAgICAgPHBhdGggZD0iTTMsMThoMTh2LTJIM1YxOHogTTMsMTNoMTh2LTJIM1YxM3ogTTMsNnYyaDE4VjZIM3oiIHN0eWxlPSJmaWxsOiNmM2YzZjM7Ii8+CiAgICA8L2c+CjwvZz4KPGcgaWQ9IkdyaWQiIGRpc3BsYXk9Im5vbmUiPgogICAgPGcgZGlzcGxheT0iaW5saW5lIj4KICAgIDwvZz4KPC9nPgo8L3N2Zz4=) no-repeat  center center;
   border: none;
   height: 38px;
-  margin: 16px 0 0 16px;
+  margin: 15px 0 0 16px;
   width: 36px;
+}
+#header h3 {
+  margin-left: 12px;
+  color: #ffffff;
+  font-size: 20px;
+}
+#header .toolbarArrow {
+  margin: 22px 0 0 12px;
+  width: 18px;
+}
+
+#header .right {
+  float: right;
+  height: 64px;
+  vertical-align: middle;
+}
+#header .right ul li{
+  display: inline;
+  list-style: none;
+  float: right;
+  height: 100%;
+}
+#header .calendarBtn {
+   background: transparent url(../images/toolbar/calendar.svg) no-repeat center;
+   width: 38px;
+   height: 38px;
+   border: none;
+   margin: 15px 16px 0 0;
+ }
+#header .notifyBtn {
+  background: transparent url(../images/toolbar/bell.svg) no-repeat center;
+  width: 38px;
+  height: 38px;
+  border: none;
+  margin: 15px 16px 0 0;
+}
+#header .profileBtn {
+  background: transparent;
+  margin: 12px 0 0 0;
+  border: none;
+}
+#header .profileBtn img {
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 100%;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+}
+#header span {
+  margin: 18px 16px 0 10px;
+  width: 100px;
+  font-size: 14px;
+  color: #ffffff;
+  display: inline-block;
+  line-height: 15px;
 }
 
 

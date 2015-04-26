@@ -31,13 +31,9 @@ angular
         templateUrl: 'views/events.html',
         controller: 'MainCtrl'
       })
-      .when('/login', {
-        templateUrl: 'views/login.html',
-        controller: ''
-      })
       .when('/latenight', {
         templateUrl: 'views/latenight.html',
-        controller: ''
+        controller: 'MainCtrl'
       })
       .when('/events', {
         templateUrl: 'views/events.html',
@@ -46,14 +42,6 @@ angular
       .when('/tickets', {
         templateUrl: 'views/tickets.html',
         controller: 'TicketsCtrl'
-      })
-      .when('/activity', {
-        templateUrl: 'views/activity.html',
-        controller: ''
-      })
-      .when('/setting', {
-        templateUrl: 'views/setting.html',
-        controller: ''
       })
       .otherwise({
         redirectTo: '/'

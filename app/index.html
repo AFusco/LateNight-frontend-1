@@ -23,9 +23,43 @@
   <body>
     <!-- Inizio Toolbar -->
     <div id="header">
-      <button ng-click="toggleLeft('left')" class="menuBtn">
-        <span class="visually-hidden">Menu</span>
-      </button>
+      <div class="left">
+        <ul>
+          <li>
+            <button ng-click="toggleLeft('left')" class="menuBtn">
+              <span class="visually-hidden">Menu</span>
+            </button>
+          </li>
+          <li>
+            <h3>LateNight</h3>
+          </li>
+          <li>
+            <img class="toolbarArrow"src="../images/toolbar/docArrow.png">
+          </li>
+          <li>
+            <h3>{{ tabName() }}</h3>
+          </li>
+        </ul>
+      </div>
+
+      <div class="right">
+        <ul>
+          <li>
+            <span>{{ profileName() + ' ' + profileRole()}}</span>
+          </li>
+          <li>
+            <button class="profileBtn">
+              <img src="{{ profilePic() }}">
+            </button>
+          </li>
+          <li>
+            <button class="calendarBtn"></button>
+          </li>
+          <li>
+            <button class="notifyBtn"></button>
+          </li>
+        </ul>
+      </div>
     </div>
     <!-- Fine Toolbar -->
 
