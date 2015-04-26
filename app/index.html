@@ -73,8 +73,20 @@
 
     <!-- Inizio Sidenav Left -->
     <section layout="row" flex>
-      <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left">
-        <p>Menu</p>
+      <md-sidenav style="background-color: #2e3842;" class="md-sidenav-left md-whiteframe-z2" md-component-id="left">
+        <div class="menuProfile">
+          <img class="menuPicture" src="{{ profilePic() }}" alt="profile">
+          <h3 class="menuUser">{{ profileName() + ' ' + profileRole()}}</h3>
+        </div>
+
+        <hr>
+
+        <div class="menuButtons">
+          <md-button href="#/events">Eventi</md-button>
+          <md-button href="#/tickets">Biglietti</md-button>
+          <md-button href="#/main">LateNight</md-button>
+          <md-button href="#/login">Login</md-button>
+        </div>
       </md-sidenav>
 
       <!-- Right column View -->
