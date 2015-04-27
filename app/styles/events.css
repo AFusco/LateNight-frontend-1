@@ -2,22 +2,41 @@
   margin: 0;
   padding: 0;
   position: absolute;
-  top: 64px;
-  right: 40px;
+  top: 84px;
+  right: 380px;
   left: 40px;
   border: 1px solid #000;
   height: 500px;
+  text-align: center;
 }
 .eventsLeft {
   border: 1px solid #000;
-  margin: 0 auto;
   width: 400px;
   height: 300px;
+  display: inline-block;
+  text-align: left;
 }
-/*.eventsRight {*/
-  /*border: 1px solid #000;*/
-  /*margin: 20px auto;*/
-  /*position: fixed;*/
-  /*width: 300px;*/
-  /*height: 500px;*/
-/*}*/
+.eventsRight {
+  border: 1px solid #006600;
+  position: fixed;
+  top: 84px;
+  right: 40px;
+  width: 300px;
+  height: 500px;
+}
+
+/* Tablet */
+@media all and (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+/* Phones */
+@media only screen and (max-width: 768px) {
+  .events {
+    right: 10px;
+    left: 10px;
+  }
+  .eventsRight {
+    display: none;
+  }
+}
