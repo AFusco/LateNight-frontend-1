@@ -6,5 +6,3 @@
  * Per la grafica Angular-material
  */
 'use strict';
-
-//var app = angular.module('lateNightApp');

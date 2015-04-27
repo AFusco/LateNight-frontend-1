@@ -23,22 +23,20 @@ app.controller('MainCtrl', function($scope, $timeout, $mdSidenav, $log) {
       });
   };
 
-  $scope.menu = [
-    { name: 'LateNight',
-      image:'images/svg/heart75.svg',
-      link: '#/latenight'},
-
-    { name: 'Eventi',
-      image:'images/svg/man204.svg',
-      link: '#/events'},
-
-    { name: 'Biglietti',
-      image:'images/svg/ticket6.svg',
-      link: '#/tickets'},
-  ];
-
   $scope.tabName = function() {
-    return document.URL.split('#/')[1].charAt(0).toUpperCase()+document.URL.split('#/')[1].slice(1);
+    //return document.URL.split('#/')[1].charAt(0).toUpperCase()+document.URL.split('#/')[1].slice(1);
+    if (document.URL.split('#/')[1] === 'events') {
+      return 'Eventi';
+    }
+    if (document.URL.split('#/')[1] === 'tickets') {
+      return 'Biglietti';
+    }
+    if (document.URL.split('#/')[1] === 'login') {
+      return 'Login';
+    }
+    else {
+      return 'Into the night';
+    }
   };
 
   $scope.profilePic = function() {

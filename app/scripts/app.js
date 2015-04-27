@@ -28,11 +28,11 @@ angular
 
     $routeProvider
       .when('/', {
-        templateUrl: 'views/events.html',
+        templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
       .when('/latenight', {
-        templateUrl: 'views/latenight.html',
+        templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
       .when('/events', {

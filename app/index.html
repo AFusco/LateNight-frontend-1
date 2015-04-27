@@ -73,36 +73,36 @@
 
     <!-- Inizio Sidenav Left -->
     <section layout="row" flex>
-      <md-sidenav style="background-color: #2e3842;" class="md-sidenav-left md-whiteframe-z2" md-component-id="left">
+      <md-sidenav style="background-color: #2e3842; position:fixed;" class="md-sidenav-left md-whiteframe-z2" md-component-id="left">
         <div class="menuProfile">
           <img class="menuPicture" src="{{ profilePic() }}" alt="profile">
           <h3 class="menuUser">{{ profileName() + ' ' + profileRole()}}</h3>
         </div>
 
-        <hr>
+        <md-divider></md-divider>
 
         <div class="menuButtons">
           <ul>
             <li>
-              <button class="btnSidenav">
+              <button class="btnSidenav" onclick="window.location.href='#/main'" ng-click="close()">
                 <img class="imgBtn" src="images/svg/date.svg">
                 <span class="spanBtn">LateNight</span>
               </button>
             </li>
             <li>
-              <button class="btnSidenav">
-                <img class="imgBtn" src="images/svg/email5.svg">
+              <button class="btnSidenav" onclick="window.location.href='#/events'" ng-click="close()">
+                <img class="imgBtn" src="images/sidenav/man204.svg">
                 <span class="spanBtn">Eventi</span>
               </button>
             </li>
             <li>
-              <button class="btnSidenav">
-                <img class="imgBtn" src="images/svg/heart75.svg">
+              <button class="btnSidenav" onclick="window.location.href='#/tickets'" ng-click="close()">
+                <img class="imgBtn" src="images/sidenav/ticket6.svg">
                 <span class="spanBtn">Biglietti</span>
               </button>
             </li>
             <li>
-              <button class="btnSidenav" onclick="window.location.href='#/login'">
+              <button class="btnSidenav" onclick="window.location.href='#/login'" ng-click="close()">
                 <img class="imgBtn" src="images/svg/ticket6.svg">
                 <span class="spanBtn">Login</span>
               </button>

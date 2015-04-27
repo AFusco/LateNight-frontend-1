@@ -214,27 +214,33 @@ body {
   margin: 20px 0 0 0;
 
 }
-.eventBtn {
-  width: 38px;
-  height: 38px;
+.btnSidenav {
+  border: 1px solid #000;
+  margin: 0;
+  background: transparent;
+  text-align: left;
+  border: none;
+  width: 100%;
+}
+.btnSidenav:hover {
+  background: #3e4953;
+}
+.imgBtn {
+  margin: 10px 0 10px 30px;
+  background: transparent;
   border: none;
   border-radius: 100%;
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
-  margin: 13px 16px 0 0;
-}
-.eventBtn:hover {
-  background: #3e4953;
-}
-.imgBtn {
-  background: transparent;
   width: 30px;
   height: 30px;
+  float: left;
 }
-.btnSidenav {
-  background: transparent;
-  border: none;
+.spanBtn {
+  margin: 15px 0 10px 15px;
+  font-size: 18px;
   color: #ffffff;
+  float: left;
 }
 
 /* Sidenav Right*/
