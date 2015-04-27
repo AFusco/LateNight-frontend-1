@@ -82,10 +82,32 @@
         <hr>
 
         <div class="menuButtons">
-          <md-button href="#/events">Eventi</md-button>
-          <md-button href="#/tickets">Biglietti</md-button>
-          <md-button href="#/main">LateNight</md-button>
-          <md-button href="#/login">Login</md-button>
+          <ul>
+            <li>
+              <button class="btnSidenav">
+                <img class="imgBtn" src="images/svg/date.svg">
+                <span class="spanBtn">LateNight</span>
+              </button>
+            </li>
+            <li>
+              <button class="btnSidenav">
+                <img class="imgBtn" src="images/svg/email5.svg">
+                <span class="spanBtn">Eventi</span>
+              </button>
+            </li>
+            <li>
+              <button class="btnSidenav">
+                <img class="imgBtn" src="images/svg/heart75.svg">
+                <span class="spanBtn">Biglietti</span>
+              </button>
+            </li>
+            <li>
+              <button class="btnSidenav" onclick="window.location.href='#/login'">
+                <img class="imgBtn" src="images/svg/ticket6.svg">
+                <span class="spanBtn">Login</span>
+              </button>
+            </li>
+          </ul>
         </div>
       </md-sidenav>
 

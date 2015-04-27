@@ -226,6 +226,16 @@ body {
 .eventBtn:hover {
   background: #3e4953;
 }
+.imgBtn {
+  background: transparent;
+  width: 30px;
+  height: 30px;
+}
+.btnSidenav {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+}
 
 /* Sidenav Right*/
 #container {
